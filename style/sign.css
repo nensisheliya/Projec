@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+
+header{
+    background-color: #24c5aa;
+    padding: 15px 0px;
+}
+
+.justifly{
+    justify-content: space-between;
+}
+.align{
+    align-items: center;
+}
+nav ul li a{
+    color:white;
+    font-size: 20px;
+}
+nav ul li{
+    padding: 0px 60px;
+
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.form{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#usedata{
+    background-image:url(/Project/img/light-cb-editing-new-background-download-full-hd-11663607132cgs2zpktlv.jpg);
+    border-radius: 80px;
+    width: 350px;
+    padding: 20px 40px;
+    margin-top: 80px;
+    border: 5px solid rgba(166, 110, 110, 0.449);
+}
+#form{
+   background-image: url(/Project/img/images.jpg);
+    border-radius: 80px;
+    width: 350px;
+    padding: 20px 40px;
+    margin-top: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.449);
+}
+.form-control{
+    margin-bottom: 15px;
+}
+.form-control label{
+    display: block;
+    color: rgb(235, 227, 227);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.form-control input{
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+    outline: none;
+    border: 2px solid rgb(220, 171, 171);
+}
+.form-control input:focus{
+    border: 2px solid #4d4a4a;
+
+}
+.form-control small{
+    color: red;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.form-control small p{
+    visibility: hidden;
+}
+
+
+
+
+
+
+

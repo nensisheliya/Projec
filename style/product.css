@@ -1,0 +1,22 @@
+#parent-box{
+    display: flex;
+/* }
+#box1{
+    border: 1px solid gray;
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+#box2 div img{
+  height: 200px;
+  width: 200px;
+}
+#box2{
+    display: grid;
+    grid-template-columns: repeat(3,1f4);
+    height:100px;
+    width: 60px;
+    overflow: scroll;
+} */
