@@ -1,6 +1,6 @@
 #parent-box{
     display: flex;
-/* }
+}
 #box1{
     border: 1px solid gray;
     height: 100vh;
@@ -14,9 +14,10 @@
   width: 200px;
 }
 #box2{
+    width: 70%;
     display: grid;
-    grid-template-columns: repeat(3,1f4);
-    height:100px;
-    width: 60px;
+    grid-template-columns: repeat(3,1fr);
+    /* height:100px;
+    width: 60px; */
     overflow: scroll;
-} */
+}
