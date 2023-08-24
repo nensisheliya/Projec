@@ -16,6 +16,38 @@ const display=(data)=>{
         rate.innerHTML=product.rating.rate;
         let btn=document.createElement("button");
         btn.innerHTML="buy Now";
+        btn.addEventListener("click",()=>{
+            let loggedIn=localStorage.getItem("loggedIn");
+            if(loggedIn){
+                fetch('http://localhost:3000/cart?id=${product.id}')
+                .then((response)=>response.json())
+                .then((data)=>{
+                    if(data.length > 0){
+                        console.log(data[0].qty);
+
+                        fetch('http://localhost:3000/cart/${product.id}',{
+                            method:"PATCH",
+                            headers: {"content-Type": "application/json"},
+                            body:JSON.stringify({qty:data[0].qty+1}),
+                        });
+                    }
+                    else{
+                        fetch("http://localhost:3000/cart",{
+                            method:"POST",
+                            headers: {"content-Type": "application/json"},
+                            body:JSON.stringify({qty:data[0].qty+1}),
+                        });
+                    }
+
+                })
+            }
+            else{
+                alert("you have to login first")
+                setTimeout(()=>{
+                    window.localStorage.href="/pages/login.html"
+                },1000)
+            }
+        })
         
         let div = document.createElement("div")
         div.append(img,title,price,category,rate,btn)

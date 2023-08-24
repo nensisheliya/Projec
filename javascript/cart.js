@@ -1,8 +1,6 @@
 import navbar from '../components/nav.js';
 
 document.getElementById('navbar').innerHTML =  navbar()
-import navbar from "../componets/nav.js";
-document.getElementById("navbar").innerHTML = navbar();
 
 
 const ui = (data) => {
@@ -28,7 +26,7 @@ const ui = (data) => {
   };
   
   let get = async () => {
-    let res = await fetch("http://localhost:3000/cart");
+    let res = await fetch("http://localhost:3000/cart/");
     let data = await res.json();
     ui(data);
     console.log(data)
